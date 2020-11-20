@@ -1,0 +1,30 @@
+.h1 {
+  text-align: center;
+}
+
+.continueShopping {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.checkoutButton {
+  border: none;
+  background: none;
+  align-self: center;
+  padding: 10px;
+  background-color: var(--cedar-chest);
+  border-radius: 6px;
+  font-size: medium;
+  color: white;
+  height: 40px;
+  margin: 20px 0;
+}
+.checkoutButton:hover {
+  cursor: pointer;
+  background-color: var(--cadmium-orange);
+}
+
+.loadingSpinner {
+  align-self: center;
+  padding: 5px;
+}

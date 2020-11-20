@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+
+  /* color palette from coolors.co */
+  --steel-teal: #588b8bff;
+  --steel-teal-nav: #588b8bf5;
+  --white: #ffffffff;
+  --unbleached-silk: #ffd5c2ff;
+  --cadmium-orange: #f28f3bff;
+  --cedar-chest: #c8553dff;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  font-family: "Josefin Sans", sans-serif;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/JosefinSans-VariableFont_wght.ttf");
+}

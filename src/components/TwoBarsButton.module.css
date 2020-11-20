@@ -1,0 +1,111 @@
+@media screen and (max-width: 599px) {
+  .button {
+    /* reset default button styles */
+    padding: 0 10px;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+
+  .twoBars {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 18px;
+    height: 8px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .closeIcon {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  .closeIcon .stroke1,
+  .closeIcon .stroke2 {
+    box-sizing: border-box;
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+  }
+  .closeIcon .stroke1 {
+    left: 0px;
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .closeIcon .stroke2 {
+    left: 0px;
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+
+    background: var(--steel-teal-nav);
+  }
+  .menuHidden {
+    display: none;
+  }
+
+  .menu a {
+    color: white;
+    padding: 10px;
+    border-top: 1px solid #0003;
+  }
+  .menu a:first-child {
+    margin-top: 20px;
+    border-top: none;
+  }
+  .menu a:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .button {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    order: 2;
+    flex-grow: 1;
+    outline: none;
+  }
+  .menu a {
+    color: white;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    cursor: pointer;
+  }
+  .button:hover .twoBars {
+    border-color: var(--cadmium-orange);
+  }
+  .button:hover .stroke1,
+  .button:hover .stroke2 {
+    background-color: var(--cadmium-orange);
+  }
+
+  .menu a:hover {
+    color: var(--cadmium-orange);
+  }
+}

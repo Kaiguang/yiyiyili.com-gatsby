@@ -1,0 +1,22 @@
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorSquare {
+  height: 40vh;
+}
+
+.headline {
+  margin: 0;
+  color: black;
+  font-family: "Anton", sans-serif;
+}
+
+.link {
+  font-family: "Anton", sans-serif;
+  color: black;
+  align-self: flex-end;
+  margin-top: 20px;
+}

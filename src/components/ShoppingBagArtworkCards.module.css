@@ -1,0 +1,33 @@
+.artworkCard {
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+  display: flex;
+  padding: 20px 10px;
+  border-top: 1px solid #0003;
+}
+
+.artworkCardInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.secondaryText {
+  font-size: small;
+  color: silver;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  align-self: flex-start;
+  cursor: pointer;
+  color: dodgerblue;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+.removeButton:hover {
+  text-decoration-line: underline;
+}
