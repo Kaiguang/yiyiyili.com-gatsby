@@ -5,7 +5,7 @@ import { loadStripe } from "@stripe/stripe-js"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo.js"
-import LoadingSpinner from "../components/loading-spinner.js"
+import LoadingSpinner from "../components/LoadingSpinner"
 import ShoppingBagArtworkCards from "../components/ShoppingBagArtworkCards"
 
 import { shoppingBagState, artworksState } from "../utils/atoms.js"
