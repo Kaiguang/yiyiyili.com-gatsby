@@ -13,7 +13,7 @@ export default function Contact() {
   const [data, setData] = useState({ name: "", email: "", message: "" })
   const [isSendingData, setIsSendingData] = useState(false)
   const [isFormValid, setIsFormValid] = useState(true)
-  const [isMsgSentSuccessful, setIsMsgSentSuccessful] = useState(true)
+  const [isMsgSentSuccessful, setIsMsgSentSuccessful] = useState(false)
 
   const handleFormSubmission = async event => {
     event.preventDefault()
