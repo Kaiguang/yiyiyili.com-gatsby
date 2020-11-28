@@ -48,7 +48,7 @@ export default function ArtworkCards() {
   return (
     <div className={styles.container}>
       {sortedArtworks.slice(0, qtyOfArtToShow).map(artwork => {
-        const fluidImages = (artwork.imageNames || ["2020-11-24"]).map(
+        const fluidImages = artwork.imageNames.map(
           name => fluidImagesByName[name]
         )
 

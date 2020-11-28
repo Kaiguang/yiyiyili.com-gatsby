@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import ImageSwitchButtons from "./ImageSwitchButtons"
@@ -26,4 +27,9 @@ export default function ArtworkCardImage({ fluidImages, artworkName }) {
       />
     </>
   )
+}
+
+ArtworkCardImage.propTypes = {
+  fluidImages: PropTypes.array.isRequired,
+  artworkName: PropTypes.string.isRequired,
 }

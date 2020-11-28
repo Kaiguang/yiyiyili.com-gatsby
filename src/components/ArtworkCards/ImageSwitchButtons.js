@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import styles from "./ImageSwitchButtons.module.css"
 
@@ -25,4 +26,10 @@ export default function ImageSwitchButtons({ qty, imageIndex, setImageIndex }) {
       ))}
     </div>
   ) : null
+}
+
+ImageSwitchButtons.propTypes = {
+  qty: PropTypes.number.isRequired,
+  imageIndex: PropTypes.number.isRequired,
+  setImageIndex: PropTypes.func.isRequired,
 }
