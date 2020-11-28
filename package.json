@@ -2,7 +2,7 @@
   "name": "yiyiyili-com-gatsby",
   "private": true,
   "description": "Gatsby frontend for yiyiyili.com",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "Kaiguang Li <lkaiguang@gmail.com>",
   "dependencies": {
     "@stripe/stripe-js": "^1.11.0",
