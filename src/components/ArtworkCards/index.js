@@ -9,7 +9,7 @@ import { addToBag } from "../../utils/shoppingBag.js"
 
 import styles from "./index.module.css"
 
-export default function ArtworkCards() {
+export default function ArtworkCards({ tag }) {
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { regex: "/^artwork-images/" } }) {
@@ -37,13 +37,29 @@ export default function ArtworkCards() {
 
   const [shoppingBag, setShoppingBag] = useRecoilState(shoppingBagState)
   const artworks = useRecoilValue(artworksState)
-  const unsoldArtworks = artworks.filter(artwork => artwork.qty > 0)
+
+  // make a copy of the artworks and filter them by tags
+  let filteredArtworks = []
+  if (tag) {
+    filteredArtworks = artworks.filter(artwork => {
+      if (artwork.tags) {
+        return artwork.tags.includes(tag)
+      } else {
+        return false
+      }
+    })
+  } else {
+    filteredArtworks = artworks.filter(artwork => !artwork.tags)
+  }
+
+  // make a copy of the artworks and sort the copy descending by id and by unsold/sold
+  const unsoldArtworks = filteredArtworks.filter(artwork => artwork.qty > 0)
   unsoldArtworks.sort((a, b) => (a.id < b.id ? 1 : -1))
-  const soldArtworks = artworks.filter(artwork => artwork.qty === 0)
+  const soldArtworks = filteredArtworks.filter(artwork => artwork.qty === 0)
   soldArtworks.sort((a, b) => (a.id < b.id ? 1 : -1))
   const sortedArtworks = [...unsoldArtworks, ...soldArtworks]
 
-  const [qtyOfArtToShow, setQtyOfArtToShow] = useState(6)
+  const [qtyOfArtToShow, setQtyOfArtToShow] = useState(9)
 
   return (
     <div className={styles.container}>
@@ -90,7 +106,7 @@ export default function ArtworkCards() {
 
       {qtyOfArtToShow < sortedArtworks.length ? (
         <button
-          onClick={() => setQtyOfArtToShow(qtyOfArtToShow + 6)}
+          onClick={() => setQtyOfArtToShow(qtyOfArtToShow + 9)}
           className={styles.showMoreButton}
         >
           Show more

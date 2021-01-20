@@ -35,6 +35,7 @@ export default function TwoBarsButton() {
       >
         <Link to="/">Home</Link>
         <Link to="/shop/">Shop</Link>
+        <Link to="/shop/letters">Shop Letters</Link>
         <Link to="/about/">About</Link>
         <Link to="/contact/">Contact</Link>
       </div>
