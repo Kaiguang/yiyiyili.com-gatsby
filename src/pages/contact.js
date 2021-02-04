@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo.js"
+import SEO from "../components/SEO"
 import LoadingSpinner from "../components/LoadingSpinner"
 
 import styles from "./contact.module.css"

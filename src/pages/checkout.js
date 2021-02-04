@@ -6,7 +6,7 @@ import { emptyBag } from "../utils/shoppingBag.js"
 import styles from "./checkout.module.css"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo.js"
+import SEO from "../components/SEO"
 import LoadingSpinner from "../components/LoadingSpinner"
 
 export default function Checkout() {

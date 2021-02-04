@@ -4,7 +4,7 @@ import { useRecoilValue } from "recoil"
 import { loadStripe } from "@stripe/stripe-js"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo.js"
+import SEO from "../components/SEO"
 import LoadingSpinner from "../components/LoadingSpinner"
 import ShoppingBagArtworkCards from "../components/ShoppingBagArtworkCards"
 

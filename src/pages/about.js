@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import styles from "./about.module.css"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 export default function About() {
   const data = useStaticQuery(graphql`
