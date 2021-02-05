@@ -34,8 +34,8 @@ export default function TwoBarsButton() {
         tabIndex="0"
       >
         <Link to="/">Home</Link>
-        <Link to="/shop/">Shop</Link>
-        <Link to="/shop/letters">Shop Letters</Link>
+        <Link to="/collections/">Collections</Link>
+        <Link to="/collections/letters">Embroidery Letters</Link>
         <Link to="/about/">About</Link>
         <Link to="/contact/">Contact</Link>
       </div>

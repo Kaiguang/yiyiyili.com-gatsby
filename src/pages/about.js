@@ -38,7 +38,7 @@ export default function About() {
         />
 
         <p>
-          Hi, welcome to my <Link to="/shop/">shop</Link>.
+          Hi, welcome to my <Link to="/collections/">gallery of embroidery arts</Link>.
         </p>
 
         <p>I'm Yi Li, lives in Edmonton, Alberta, Canada.</p>
@@ -50,10 +50,9 @@ export default function About() {
         </p>
 
         <p>
-          Here you can see a <Link to="/shop/">collection</Link> of my arts,
-          each piece is made by hand by me, so each piece is unique and there's
-          only one of a kind. If you see something you like that was sold, feel
-          free to let me know.
+          Here you can see a <Link to="/collections/">collection</Link> of my arts,
+          each unique piece is made by hand. I'm open to ideas, feel free to get
+          in touch with me!
         </p>
       </div>
     </Layout>

@@ -71,8 +71,8 @@ export default function ShoppingBag() {
 
       <ShoppingBagArtworkCards />
 
-      <Link to="/shop/" className={styles.continueShopping}>
-        {shoppingBag.length > 0 ? `Shop for more` : `Continue shopping`}
+      <Link to="/collections/" className={styles.continueShopping}>
+        {shoppingBag.length > 0 ? `Browse for more` : `Continue browsing`}
       </Link>
 
       {shoppingBag.length > 2 && subtotal() !== 0 ? (

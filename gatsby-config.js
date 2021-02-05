@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Yi Li`,
-    description: `Yi Li's online shop`,
+    title: `Yi Embroidery`,
+    description: `Embroidery art by Yi Li.`,
     author: `Kaiguang Li`,
   },
   plugins: [

@@ -30,7 +30,7 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <div className={styles.container}>
         <div
           className={styles.colorSquare}
@@ -45,8 +45,8 @@ export default function IndexPage() {
           more...
         </Link>
 
-        <Link to="/shop/" className={styles.link}>
-          Art collections
+        <Link to="/collections/" className={styles.link}>
+          Collections
         </Link>
       </div>
     </Layout>

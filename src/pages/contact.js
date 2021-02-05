@@ -48,7 +48,10 @@ export default function Contact() {
   return (
     <Layout>
       <div className={styles.container}>
-        <SEO title="Contact" />
+        <SEO
+          title="Contact"
+          description="Contact Yi Li to talk about embroidery arts and more."
+        />
         {isMsgSentSuccessful ? (
           <>
             <h1 className={styles.h1}>Message sent</h1>
