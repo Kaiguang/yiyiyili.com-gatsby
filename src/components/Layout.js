@@ -38,11 +38,13 @@ export default function Layout({ children }) {
       <Nav />
       <main className={styles.main}>{children}</main>
       <footer className={styles.footer}>
-        <span>Yi Li © 2020</span>
+        <span>Yi Li © {new Date().getFullYear()}</span>
         <div className={styles.socialMediaLinkContainer}>
           <a
             href="mailto:hello@yiyiyili.com"
             className={styles.socialMediaLink}
+            target="_blank"
+            rel="noreferrer"
           >
             <Img
               fixed={data.emailIcon.childImageSharp.fixed}
@@ -53,6 +55,8 @@ export default function Layout({ children }) {
           <a
             href="https://www.instagram.com/yiyiyi_li_embroidery/"
             className={styles.socialMediaLink}
+            target="_blank"
+            rel="noreferrer"
           >
             <Img
               fixed={data.instagramIcon.childImageSharp.fixed}
@@ -63,6 +67,8 @@ export default function Layout({ children }) {
           <a
             href="https://www.xiaohongshu.com/user/profile/5aea94a0e8ac2b6d4c5f92aa"
             className={styles.socialMediaLink}
+            target="_blank"
+            rel="noreferrer"
           >
             <Img
               fixed={data.xiaohongshuIcon.childImageSharp.fixed}
