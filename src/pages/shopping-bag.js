@@ -71,7 +71,7 @@ export default function ShoppingBag() {
 
       <ShoppingBagArtworkCards />
 
-      <Link to="/collections/" className={styles.continueShopping}>
+      <Link to="/collections" className={styles.continueShopping}>
         {shoppingBag.length > 0 ? `Browse for more` : `Continue browsing`}
       </Link>
 

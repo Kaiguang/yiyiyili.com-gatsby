@@ -43,11 +43,11 @@ export default function IndexPage() {
         <p className={styles.headline}>
           putting colors together with threads and needles
         </p>
-        <Link to="/about/" className={styles.link}>
+        <Link to="/about" className={styles.link}>
           more...
         </Link>
 
-        <Link to="/collections/" className={styles.link}>
+        <Link to="/collections" className={styles.link}>
           Collections
         </Link>
       </div>

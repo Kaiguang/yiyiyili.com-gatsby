@@ -59,7 +59,7 @@ function CheckoutStatusUnknown() {
         </span>
       </h1>
       <p>
-        You can either <Link to="/collections/">continue browsing</Link>.
+        You can either <Link to="/collections">continue browsing</Link>.
       </p>
       <p>
         Or <Link to="/shopping-bag/">checkout the shopping bag</Link>.
@@ -85,7 +85,7 @@ function CheckoutSuccess() {
       <p>Thank you!</p>
       <p>Please check your email for the order confirmation.</p>
       <p>
-        <Link to="/collections/">Continue browsing</Link>
+        <Link to="/collections">Continue browsing</Link>
       </p>
       <p>
         If you have any questions, please email{" "}
@@ -105,7 +105,7 @@ function CheckoutCanceled() {
           😭
         </span>
       </h1>
-      <Link to="/collections/">Continue browsing</Link>
+      <Link to="/collections">Continue browsing</Link>
       <p>
         If you have any questions, please email{" "}
         <a href="mailto:hello@yiyiyili.com">hello@yiyiyili.com</a>
